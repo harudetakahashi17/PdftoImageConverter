@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- MIT licensed. PDFium + SkiaSharp natives are bundled in the packages: fully offline. -->
+    <PackageReference Include="PDFtoImage" Version="4.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PdfConverter.UseCases\PdfConverter.UseCases.csproj" />
+  </ItemGroup>
+</Project>
